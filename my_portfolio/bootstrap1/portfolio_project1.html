@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    <style>
+        .card{
+            box-shadow: 10px 10px 10px black;
+        }
+        div pre{
+            width: 80%;
+            box-shadow: 10px 10px 10px black;
+        }
+        .nav-link:hover {
+            border: solid;
+            border-top: 2px;
+            border-left: 2px;
+            border-right: 2px;
+            border-color: white;
+        }
+        /*footer*/
+        i{
+            font-size: 40px;
+        }
+    </style>
+    <title>project 1</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand mb-0 h1" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="http://127.0.0.1:5500/bootstrap1.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="technical_skill.html">Technical Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="academics.html"> Academics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="schooling.html">Schooling</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Projects
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#"></a></li>
+                            <li><a class="dropdown-item" href="portfolio_project1.html">Project 1</a></li>
+                            <li><a class="dropdown-item" href="">Project 2</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">More Projects (coming soon!)</a></li>
+                        </ul>
+                    </li>
+
+
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+        <div class="btn-group w-25" role="group" aria-label="Basic mixed styles example ">
+            <a href="sign_up_with_css.html"><button type="button" class="btn btn-lg btn-info" disabled>Sign
+                    up</button></a>
+
+            <a href="sign_in_with_css.html"><button type="button" class="btn btn-outline-info me-3">Sign in</button>
+             </a>
+        </div>
+
+
+    </nav>
+    <div class="card pt-5">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Tic_tac_toe.svg" class="card-img-top w-25" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><h1>Tic-Tac-Toe</h1></h5>
+          <p class="card-text">Tic-Tac-Toe is a classic, simple, and yet engaging game played on a grid of 3x3 squares. It's a two-player game, typically played with pencil and paper, but it can also be implemented in various digital formats.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+
+          <div>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href=" https://github.com/Raghavverma109/codsoft-Internship/blob/main/task3.CPP
+                    ">git_hub code</a></li>
+                  <li class="breadcrumb-item"><a href="https://www.linkedin.com/posts/raghav-verma-71870627a_thrilled-to-share-the-successful-completion-activity-7136975265267671040-P080?utm_source=share&utm_medium=member_desktop">Linkedin post</a></li>
+                </ol>
+              </nav>
+            
+            <pre>
+                <h2>Code</h2>
+                /////..........welcome to the game of Tic Tac Toe................/////
+
+#include <iostream>
+using namespace std;
+string name1 = "";
+string name2 = "";
+
+int row, column;
+bool tie = false;
+char chance = 'x';
+char space[3][3] = {{'1', '2', '3'}, {'4', '5', '6'}, {'7', '8', '9'}};
+
+void func1()
+{
+
+    cout << "       |       |       \n";
+    cout << "  " << space[0][0] << "    |   " << space[0][1] << "   |   " << space[0][2] << "   \n";
+    cout << "_______|_______|_______\n";
+    cout << "       |       |       \n";
+    cout << "  " << space[1][0] << "    |   " << space[1][1] << "   |   " << space[1][2] << "   \n";
+    cout << "_______|_______|_______\n";
+    cout << "       |       |       \n";
+    cout << "  " << space[2][0] << "    |   " << space[2][1] << "   |   " << space[2][2] << "   \n";
+    cout << "       |       |       \n";
+}
+
+void func2()
+{
+
+    int digit;
+
+    if (chance == 'x')
+    {
+        cout << name1 << " please enter the place where you want to insert the 'x' " << endl;
+        cin >> digit;
+    }
+
+    if (chance == '0')
+    {
+        cout << name2 << " please enter the place where you want to insert the '0' " << endl;
+        cin >> digit;
+    }
+
+    if (digit == 1)
+    {
+        row = 0;
+        column = 0;
+    }
+    if (digit == 2)
+    {
+        row = 0;
+        column = 1;
+    }
+    if (digit == 3)
+    {
+        row = 0;
+        column = 2;
+    }
+    if (digit == 4)
+    {
+        row = 1;
+        column = 0;
+    }
+    if (digit == 5)
+    {
+        row = 1;
+        column = 1;
+    }
+    if (digit == 6)
+    {
+        row = 1;
+        column = 2;
+    }
+    if (digit == 7)
+    {
+        row = 2;
+        column = 0;
+    }
+    if (digit == 8)
+    {
+        row = 2;
+        column = 1;
+    }
+    if (digit == 9)
+    {
+        row = 2;
+        column = 2;
+    }
+    else if (digit < 1 || digit > 9)
+    {
+        cout << "You enter INVALID place number !!!!" << endl;
+    }
+
+    if (chance == 'x' && space[row][column] != 'x' && space[row][column] != '0')
+    {
+        space[row][column] = 'x';
+        chance = '0';
+    }
+    else if (chance == '0' && space[row][column] != 'x' && space[row][column] != '0')
+    {
+        space[row][column] = '0';
+        chance = 'x';
+    }
+    else
+    {
+        cout << "there is no empty space !" << endl;
+        func2();
+    }
+}
+
+bool func3()
+{
+
+    for (int i = 0; i < 3; i++)
+    {
+        if (space[i][0] == space[i][1] && space[i][0] == space[i][2] || space[0][i] == space[1][i] && space[0][i] == space[2][i])
+        {
+            return true;
+        }
+    }
+    if (space[0][0] == space[1][1] && space[1][1] == space[2][2] || space[2][0] == space[1][1] && space[1][1] == space[0][2])
+    {
+        return true;
+    }
+
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = 0; j < 3; j++)
+        {
+            if (space[i][j] != 'x' && space[i][j] != '0')
+            {
+                return false;
+            }
+        }
+    }
+    tie = true;
+    return true;
+}
+
+int main()
+{
+    cout << "**********Welcome to the game of Tic Tac Toe**********" << endl
+         << endl;
+
+    cout << "enter the name of the first player : " << endl;
+    cin >> name1;
+    cout << "enter the name of the second player : " << endl;
+    cin >> name2;
+
+    while (!func3())
+    {
+        func1();
+        func2();
+        func3();
+    }
+
+    if (chance == 'x' && tie == false)
+    {
+        func1();
+        cout << name2 << " Wins the Game !" << endl;
+    }
+    else if (chance == '0' && tie == false)
+    {
+        func1();
+        cout << name1 << " wins the Game !" << endl;
+    }
+    else
+    {
+        cout << "It's a draw !" << endl;
+    }
+}
+            </pre>
+          </div>
+        </div>
+      </div>
+      <pre>
+        <h2>output</h2>
+    </pre>
+      
+      <div class="card-group">
+        <div class="card mx-3">
+          <img src="img1.png" class="card-img-top " alt="...">
+          <div class="card-body">
+          </div>
+          <div class="card-footer">
+            <small class="text-muted d-flex justify-content-center">Page 1</small>
+          </div>
+        </div>
+        <div class="card mx-3">
+          <img src="img2.png" class="card-img-top  " alt="..." >
+          <div class="card-body  ">
+          </div>
+          <div class="card-footer">
+            <small class="text-muted d-flex justify-content-center">Page 2</small>
+          </div>
+        </div>
+        <div class="card mx-3">
+          <img src="img3.png" class="card-img-top" alt="...">
+          <div class="card-footer ">
+            <small  class="text-muted d-flex justify-content-center">Page 3</small>
+          </div>
+        </div>
+      </div>
+      /*footer*/
+      <div class="card text-center">
+        <div class="card-body">
+            <h5 class="card-title">contact us</h5>
+            <p class="card-text">"Have a question or need assistance? Contact us for support and inquiries."</p>
+            <a class="logo" href="https://www.linkedin.com/in/raghav-verma-71870627a/"><i class="fa-brands fa-linkedin"></i></a>
+            <a class="logo" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a class="logo" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            <a class="logo" href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div class="card-footer text-muted">
+            <a href="bootstrap1.html">Home</a>
+        </div>
+    </div>
+
+   
+        </div>
+    </div>
+
+
+    
+</body>
+</html>

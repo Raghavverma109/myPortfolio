@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up form</title>
+    <link rel="stylesheet" href="sign_up_with_css.css">
+    <style>
+        body{
+    /* background-image: url(sign_up.jpg); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    
+}
+    </style>
+</head>
+<body style="border: 10px solid black;">
+    <fieldset>
+        <legend>
+            <h1 style="text-align: center;">Sign Up </h1>
+        </legend>
+    </fieldset>
+    <p style="text-align: center;">Please fill this form to create an account.</p>
+    <hr style="width: 30%;">
+    <br><br><br>
+    <form action="/action_page.php" style="text-align: center;">
+    <div>
+            <label for="first_name" style="background-color: 191, 201, 202 
+            ;""> First name :</label>
+            <input type="text" name="First Name " id="first_name" placeholder="First Name">
+        <br><br>
+   
+                <label for="last_name">Last Name :</label>
+                <input type="text"  name="Last Name" id="last_name" placeholder="Last Name">
+
+  
+        <br><br>
+
+                <label for="date_of_birth">D.O.B :</label>
+                <input type="date"  name="date_of_birth" id="date_of_birth" placeholder="Date Of Birth ">
+
+
+   <br><br>
+ 
+        <label for="mobile no.">Mobile no. :</label>
+        <input type="text" id="mobile no." placeholder="Enter the Moblie number">
+
+
+   <br><br>
+
+            <label for="email">Email :</label>
+            <input type="text" name="Email" id="email" placeholder="Enter the Email">
+
+   <br><br>
+  
+            <label for="password">Password :</label>
+            <input type="text" id="password" placeholder="Enter the password">
+            <p><a href="">(forget password)</a></p>
+ 
+        </div>
+            
+        <br><br>
+        
+        
+        <hr class="hr">
+
+        <p style="text-align: center;">already a member ? <b><a href="sign_in_with_css.html"> Log In</a></b></p>
+        <input type="submit" value="Sign Up" class="submit">
+        <input type="reset" value="Reset" class="submit">
+    </form>
+    
+</body>
+</html>

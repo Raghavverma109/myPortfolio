@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+<style> 
+ /*for making cards responsive*/
+    @media(max-width:800px)
+    {
+        .papdhi_wala{
+            display: flex;
+            flex-direction: column;
+        }
+    } 
+    .nav-link:hover {
+            border: solid;
+            border-top: 2px;
+            border-left: 2px;
+            border-right: 2px;
+            border-color: white;
+        }
+        /*footer*/
+        i{
+            font-size: 40px;
+        }
+</style>
+
+    <title>Schooling</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand mb-0 h1" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="http://127.0.0.1:5500/bootstrap1.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="technical_skill.html">Technical Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="academics.html"> Academics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="schooling.html">Schooling</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Projects
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#"></a></li>
+                            <li><a class="dropdown-item" href="portfolio_project1.html">Project 1</a></li>
+                            <li><a class="dropdown-item" href="">Project 2</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">More Projects (coming soon!)</a></li>
+                        </ul>
+                    </li>
+
+
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+        <div class="btn-group w-25" role="group" aria-label="Basic mixed styles example ">
+            <a href="sign_up_with_css.html"><button type="button" class="btn btn-lg btn-info" disabled>Sign
+                    up</button></a>
+
+            <a href="sign_in_with_css.html"><button type="button" class="btn btn-outline-info me-3">Sign in</button>
+             </a>
+        </div>
+
+
+    </nav>
+
+
+    <div id="carouselExampleCaptions" class="carousel slide pt-5" data-bs-ride="carousel">
+        <div class="carousel-indicators pt-5">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://www.dsbmalg.com/uploadphoto/Slider/inaugration.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block ">
+                    <p style="font-weight: bold;">"OUR SCHOOL MOTTO IS- INSPIRING EXCELLENCE THROUGH EXAMPLE, ENDEAVOUR
+                        AND ENCOURAGEMENT"</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw5Uh0zYQflJYtg0W7gqHwyJtwctrpyKysEkrWCgxk&s"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block ">
+                    <h5 style="font-weight: bold;">Mission</h5>
+                    <p>create such a community as is ever ready to meet challenges</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.dsbmalg.com/uploadphoto/Slider/DSC_7498.JPG" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div style="margin: 5px; padding: 5px;">
+        <div class="row">
+            <div class="col-sm-6 mt-5">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">VISION</h5>
+                        <p class="card-text">D.S. Bal Mandir Sr. Sec. School, Aligarh is a co-educational institute."OUR
+                            SCHOOL MOTTO IS- INSPIRING EXCELLENCE THROUGH EXAMPLE, ENDEAVOUR AND ENCOURAGEMENT". br We
+                            aim
+                            to create a vibrant and progressive culture and a climate of continuous innovation. Our
+                            ethos is one of the ambition and achievement, striving for high standards and the maximum
+                            for every learner..</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 mt-5">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">MISSION</h5>
+                        <p class="card-text">Mission of Dharam Samaj Bal Mandir Sr. Sec. School is to create such a
+                            community as is ever ready to meet challenges. <br> We will inspire every child to reach his
+                            full potential. We will value every child as an individual in his thorough development,
+                            encouraging educational excellence, to enable them to leave us as model citizens of the
+                            future.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 style="text-align: center; padding: 20px;"><u>InfraStructure</u></h2>
+    </div>
+
+    <div class="d-flex justify-content-evenly papdhi_wala ">
+        <div class="card " style="width: 18rem;">
+            <img src="https://www.dsbmalg.com/uploadphoto/Infrastructure/SON_9446.JPG" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Library</h5>
+                <p class="card-text">Our school Dharam Samaj Bal Mandir Sr. Sec. School has also well-equipped Library
+                    dedicated to students of different age groups. Its extensive collections of books, journals,
+                    electronic media, including magazines in English, and Hindi will focus on providing an excellent
+                    reference environment.</p>
+
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="https://www.dsbmalg.com/uploadphoto/Infrastructure/SON_5832.JPG" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title"> Chemistry Lab</h5>
+                <p class="card-text">We are here greeted by the pungent smell of Ammonia, which is a testimony of a very
+                    active Chemistry Lab. Under the strict and alert vigilance of teachers and assistant, students
+                    perform
+                    various tests and analysis of salt and solution</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="https://www.dsbmalg.com/uploadphoto/Infrastructure/SON_5858.JPG" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Computer lab</h5>
+                <p class="card-text">The campus has separate computer labs for sr. students as well as jr. Students.
+                    The lab
+                    caters
+                    to the students learning C++ in classes XI and XII and students of class IX learning Oracle database
+                    programming, HTML and DHTML for classes VI to VIII, basics for primary classes.</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="https://www.dsbmalg.com/uploadphoto/Infrastructure/DSC_0255.JPG" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Cultural Activities</h5>
+                <p class="card-text">Dharam Samaj Bal Mandir Sr. Sec. School emphasises on the overall development of
+                    the student and extracurricular activities play vital role for the same. The campus is well equipped
+                    with the necessary state of art and infrastructure to facilitate all types of cultural activities.
+                    The list of the Events is as follows: Music ,Dance , Drama ,Skit, Mime, Mimicry Literacy Event :-
+                    Debate , Elocution Fine Arts :- On the spot painting, Collage, Cartooning, Rangoli In.</p>
+
+            </div>
+        </div>
+
+    </div>
+   
+    <div class="card text-center">
+      <div class="card-body">
+          <h5 class="card-title">contact us</h5>
+          <p class="card-text">"Have a question or need assistance? Contact us for support and inquiries."</p>
+          <a class="logo" href="https://www.linkedin.com/in/raghav-verma-71870627a/"><i class="fa-brands fa-linkedin"></i></a>
+          <a class="logo" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+          <a class="logo" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+          <a class="logo" href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+      </div>
+      <div class="card-footer text-muted">
+          <a href="bootstrap1.html">Home</a>
+      </div>
+  </div>
+
+
+</body>
+
+</html>
